@@ -4,13 +4,34 @@ title: Vasilis Kalligas, Software Engineer
 ---
 
 <div class="row">
-  <div class="col-xs-12">
-    Do you want to know what else I am upto? Don't forget to check out my <a href="{{site.baseurl}}/projects">projects page</a>.
-  </div>
+    <div class="col-xs-12">
+        <div class="blog-header"><h2>Personal info</h2></div>
+    </div>
 </div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <table>
+              {% for info in site.personal_info %}
+                <tr>
+                  <td class="text-main"><strong>{{ info[0] }}</strong></td>
+                  <td>{{ info[1] }}</td>
+                </tr>
+              {% endfor %}
+        </table>
+    </div>
+</div>
+
+<br><br>
 
 <div class="row">
     <div class="col-xs-12">
         <div class="blog-header"><h2>Professional experience (so far...)</h2></div>
     </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    Do you want to know what else I am upto? Don't forget to check out my <a href="{{site.baseurl}}/projects">projects page</a>.
+  </div>
 </div>
