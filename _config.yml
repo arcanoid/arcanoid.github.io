@@ -1,0 +1,31 @@
+name: Vasilis Kalligas, Software Engineer
+description: The tales of a Software Engineer called Vasilis Kalligas
+markdown: kramdown
+author: Vasilis Kalligas
+
+gems:
+  - jekyll-sitemap
+
+social:
+  github: https://github.com/arcanoid
+  email: billkall@gmail.com
+  google_plus: billkall@gmail.com
+
+projects:
+  open source:
+    Logs visualizer:
+      Source code: https://github.com/arcanoid/logs_visualizer
+      Description: A gem that converts a Rails application logs into an image graph, representing all the elements that consisted each action.
+      Technologies: Ruby, Graphviz
+    Spec producer:
+      Source code: https://github.com/arcanoid/logs_visualizer
+      Description: A gem that converts a Rails application logs into an image graph, representing all the elements that consisted each action.
+      Technologies: Ruby, Rspec
+    Multi Cool:
+      Source code: https://github.com/arcanoid/multi-cool
+      Description: A Rails app that stands as a collection of tools that I frequently search for online, compiled into a single place, such as Sample data generators, JSON, XML beautifiers and more.
+      Technologies: RoR
+    Json To Ruby Class:
+      Source code:  https://github.com/arcanoid/json_to_ruby_class
+      Description: A gem that converts a JSON input to Ruby classes, as well as C# and VB.Net (based on the options passed by the user).
+      Technologies: Ruby
