@@ -27,5 +27,13 @@ projects:
       Technologies: RoR
     Json To Ruby Class:
       Source code:  https://github.com/arcanoid/json_to_ruby_class
-      Description: A gem that converts a JSON input to Ruby classes, as well as C# and VB.Net (based on the options passed by the user).
+      Description: A Ruby gem that converts a JSON input to Ruby classes, as well as C# and VB.Net (based on the options passed by the user).
+      Technologies: Ruby
+    Facts by date:
+      Source code: https://github.com/arcanoid/facts_by_date
+      Description: A Ruby gem that provides multiple info for specific date, such as events, births and deaths that took place at that specific date.
+      Technologies: Ruby
+    Random facts:
+      Source code: https://github.com/arcanoid/random_facts
+      Description: A Ruby gem that allows a user to request random facts with optional parameters such as max size of returned results array.
       Technologies: Ruby
