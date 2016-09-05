@@ -11,12 +11,12 @@ title: Vasilis Kalligas, Software Engineer
 
 <div class="row">
     <div class="col-xs-12">
-        <table>
+        <table class="table">
               {% for info in site.personal_info %}
                 <tr>
-                  <td class="text-main"><strong>{{ info[0] }}</strong></td>
+                  <td><strong>{{ info[0] }}</strong></td>
                   <td>&nbsp;</td>
-                  <td>{{ info[1] }}</td>
+                  <td class="text-main">{{ info[1] }}</td>
                 </tr>
               {% endfor %}
         </table>
