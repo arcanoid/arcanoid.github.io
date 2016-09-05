@@ -15,7 +15,6 @@ title: Vasilis Kalligas, Software Engineer
               {% for info in site.personal_info %}
                 <tr>
                   <td><strong>{{ info[0] }}</strong></td>
-                  <td>&nbsp;</td>
                   <td class="text-main">{{ info[1] }}</td>
                 </tr>
               {% endfor %}
@@ -36,9 +35,8 @@ title: Vasilis Kalligas, Software Engineer
         <table class="table">
               {% for experience in site.professional_experience %}
                 <tr>
-                  <td><strong>{{ info[1]["from" }} - {{ info[1]["until" }}</strong></td>
-                  <td>&nbsp;</td>
-                  <td class="text-main">{{ info[0] }} @ {{ info[1]["company" }}</td>
+                  <td><strong>{{ experience[1]["from" }} - {{ experience[1]["until" }}</strong></td>
+                  <td class="text-main">{{ experience[0] }} @ {{ experience[1]["company" }}</td>
                 </tr>
               {% endfor %}
         </table>
