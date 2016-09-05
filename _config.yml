@@ -11,6 +11,46 @@ social:
   email: billkall@gmail.com
   google_plus: billkall@gmail.com
 
+personal_info:
+  Sex: Male
+  Military obligations: Fulfilled (February 2010 - November 2010)
+  Email: billkall@gmail.com
+  Phone: (+30) 69432318030
+  
+professional_experience:
+  Lead Software Engineer:
+    from: March 2016
+    until: now
+    company: e-Travel S.A.
+  Team Leader for Front-end Team:
+    from: February 2013
+    until: March 2016
+    company: e-Travel S.A.
+  Web Developer:
+    from: Novembrer 2011
+    until: February 2013
+    company: e-Travel S.A.
+  Full-stack Software Engineer:
+    from: March 2011
+    until: November 2011
+    company: CMS
+  Software Engineer:
+    from: January 2011
+    until: March 2011
+    company: Wap5 Telecommunications Ltd.
+  ECDL Instructor:
+    from: January 2008
+    until: December 2009
+    company: Technoplus
+  ECDL Instructor:
+    from: October 2007
+    until: May 2008
+    company: Epikoinonia
+  ECDL Instructor:
+    from: September 2006
+    until: June 2007
+    company: Webwonders Hellas
+
 projects:
   open source:
     Logs visualizer:
