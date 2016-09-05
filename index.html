@@ -32,7 +32,25 @@ title: Vasilis Kalligas, Software Engineer
 </div>
 
 <div class="row">
+    <div class="col-xs-12">
+        <table class="table">
+              {% for experience in site.professional_experience %}
+                <tr>
+                  <td><strong>{{ info[1]["from" }} - {{ info[1]["until" }}</strong></td>
+                  <td>&nbsp;</td>
+                  <td class="text-main">{{ info[0] }} @ {{ info[1]["company" }}</td>
+                </tr>
+              {% endfor %}
+        </table>
+    </div>
+</div>
+
+<br><br>
+
+<div class="row">
   <div class="col-xs-12">
     Do you want to know what else I am upto? Don't forget to check out my <a href="{{site.baseurl}}/projects">projects page</a>.
   </div>
 </div>
+
+<br><br>
