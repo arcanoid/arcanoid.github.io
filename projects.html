@@ -9,12 +9,21 @@ title: Vasilis Kalligas, Software Engineer - Projects
     </div>
 </div>
 
+{% for project in site.projects['open source'] %}
+{% assign loopindex = forloop.index | modulo: 2 %}
+{% if loopindex == 1 %}
 <div class="row">
-    {% for project in site.projects['open source'] %}
-        <div class="col-xs-12 col-sm-6 project-block end">
-            <div class="link-header"><a href="{{ project[1]['Source code'] }}">{{ project[0] }}</a></div>
-            <div><i class="fa fa-tags" aria-hidden="true"></i> {{ project[1]["Technologies"] }}</div>
-            <div>{{ project[1]["Description"] }}</div>
-        </div>
-    {% endfor %}
+    <div class="col-xs-12 col-sm-6 project-block end">
+        <div class="link-header"><a href="{{ project[1]['Source code'] }}">{{ project[0] }}</a></div>
+        <div><i class="fa fa-tags" aria-hidden="true"></i> {{ project[1]["Technologies"] }}</div>
+        <div>{{ project[1]["Description"] }}</div>
+    </div>
+    {% else %}
+    <div class="col-xs-12 col-sm-6 project-block end">
+        <div class="link-header"><a href="{{ project[1]['Source code'] }}">{{ project[0] }}</a></div>
+        <div><i class="fa fa-tags" aria-hidden="true"></i> {{ project[1]["Technologies"] }}</div>
+        <div>{{ project[1]["Description"] }}</div>
+    </div>
 </div>
+{% endif %}
+{% endfor %}
