@@ -32,8 +32,12 @@
     margin-bottom: 5px;
 }
 
-a:hover {
+a {
     color: #e74c3c;
+}
+
+a:hover {
+    color: #333333;
     text-decoration: none;
 }
 
@@ -112,5 +116,4 @@ a:hover {
 
 .text-main {
     color: #e74c3c;
-}
 }
