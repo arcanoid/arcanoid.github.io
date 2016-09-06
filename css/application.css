@@ -14,6 +14,11 @@
     color: #ffffff;
 }
 
+.header-column a:hover {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
 .header-column .footer-row {
     background: transparent;
     position: fixed;
