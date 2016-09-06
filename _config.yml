@@ -14,40 +14,65 @@ social:
 
 personal_info:
   Sex: Male
+  Date of birth: 24/09/1987
+  Nationality: Greek
   Military obligations: Fulfilled (February 2010 - November 2010)
   Email: billkall@gmail.com
   Phone: (+30) 69432318030
-  
+
+education:
+  Athens University of Economics and Business:
+    title: Master of Science (MSc), Information systems
+    additional_info: Master thesis on "GUI Testing Automation on Android Applications"
+    from: 2013
+    until: 2015
+  Univeristy of Piraeus:
+    title: Bachelor's degree, Computer Science
+    additional_info: Thesis on "Information Security"
+    from: 2005
+    until: 2011
+
+languages:
+  English: Professional working proficiency
+  Greek: Native or bilingual proficiency
+
+hobbies:
+  Long walks with my dog: fa fa-paw
+  Reading books: fa fa-book
+  Grabbing pop-corn and watching a movie at the cinema: fa fa-hand-spock-o
+  Hanging out with friends: fa fa-group
+  Travelling: fa fa-suitcase
+
 professional_experience:
-  Lead Software Engineer:
+  Lead Software Engineer @ e-Travel S.A.:
     from: March 2016
     until: now
     company: e-Travel S.A.
-  Team Leader for Front-end Team:
+  Team Leader for Front-end Team @ e-Travel S.A.:
     from: February 2013
     until: March 2016
     company: e-Travel S.A.
-  Web Developer:
+  Web Developer @ e-Travel S.A.:
     from: Novembrer 2011
     until: February 2013
     company: e-Travel S.A.
-  Full-stack Software Engineer:
+  Full-stack Software Engineer @ CMS:
     from: March 2011
     until: November 2011
     company: CMS
-  Software Engineer:
+  Software Engineer @ Wap5 Telecommunications Ltd.:
     from: January 2011
     until: March 2011
     company: Wap5 Telecommunications Ltd.
-  ECDL Instructor:
+  ECDL Instructor @ Technoplus:
     from: January 2008
     until: December 2009
     company: Technoplus
-  ECDL Instructor:
+  ECDL Instructor @ Epikoinonia:
     from: October 2007
     until: May 2008
     company: Epikoinonia
-  ECDL Instructor:
+  ECDL Instructor @ Webwonders Hellas:
     from: September 2006
     until: June 2007
     company: Webwonders Hellas

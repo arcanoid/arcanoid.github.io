@@ -22,8 +22,6 @@ title: Vasilis Kalligas, Software Engineer
     </div>
 </div>
 
-<br><br>
-
 <div class="row">
     <div class="col-xs-12">
         <div class="blog-header"><h2>Professional experience (so far...)</h2></div>
@@ -35,15 +33,78 @@ title: Vasilis Kalligas, Software Engineer
         <table class="table">
               {% for experience in site.professional_experience %}
                 <tr>
-                  <td><strong>{{ experience[1]["from" }} - {{ experience[1]["until" }}</strong></td>
-                  <td class="text-main">{{ experience[0] }} @ {{ experience[1]["company" }}</td>
+                  <td><strong>{{ experience[1]["from"] }} - {{ experience[1]["until"] }}</strong></td>
+                  <td class="text-main">{{ experience[0] }}</td>
                 </tr>
               {% endfor %}
         </table>
     </div>
 </div>
 
-<br><br>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="blog-header"><h2>Education</h2></div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <table class="table">
+              {% for education in site.education %}
+                <tr>
+                  <td><strong>{{ education[1]["from"] }} - {{ education[1]["until"] }}</strong></td>
+                  <td class="text-main">
+                      {{ education[0] }}
+
+                      {% if education[1]["additional_info"] %}
+                      <div>{{ education[1]["additional_info"] }}</div>
+                      {% endif %}
+                  </td>
+                </tr>
+              {% endfor %}
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="blog-header"><h2>Languages</h2></div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <table class="table">
+              {% for language in site.languages %}
+                <tr>
+                  <td><strong>{{ language[0] }}</strong></td>
+                  <td class="text-main">{{ language[1] }}</td>
+                </tr>
+              {% endfor %}
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="blog-header"><h2>Hobbies</h2></div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <table class="table">
+              {% for hobby in site.hobbies %}
+                <tr>
+                  <td><strong><i class="{{ hobby[1] }}"></i></strong></td>
+                  <td class="text-main">{{ hobby[0] }}</td>
+                </tr>
+              {% endfor %}
+        </table>
+    </div>
+</div>
+
+<br>
 
 <div class="row">
   <div class="col-xs-12">
