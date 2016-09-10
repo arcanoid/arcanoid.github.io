@@ -77,6 +77,25 @@ professional_experience:
     until: June 2007
     company: Webwonders Hellas
 
+participations:
+  - name: Participation as an elected speaker in Euruko 2013 in Athens, with presentation title "35.000 tests and counting"
+    date: 2013
+    video: https://www.youtube.com/watch?v=pdcdLn4zYCc
+    slides: http://euruko2013.org/speakers/presentations/35000_tests_and_counting-kalligas.pdf
+  - name: Attendance and participation in the fourth annual National Conference of HELLENIC SOCIETY FOR SYSTEMIC STUDIES (HSSS) 
+    date: 2009
+
+knowledge:
+  Programming languages: 
+    Excellent: Ruby, HTML, JavaScript, CSS, SQL
+    Good: Java, Korn/Bash shell, XML, ActionScript, Delphi, C, C++, C#, PHP, SQL, Assembly, Pascal
+  Database Management Systems:
+    Excellent: MS SQL Server, MySql, Access
+    Good: PostgreSQL, SQLite, Oracle
+  Design-Development Tools:
+    Excellent: IntelliJ Idea, RubyMine, MS Visual studio (.NET), MS Visual Code Studio
+    Good: Eclipse, Adobe Dreamweaver, Rational Rose Design Tool (UML), Delphi, FrontPage, Matlab
+
 projects:
   open source:
     Logs visualizer:

@@ -68,6 +68,59 @@ title: Vasilis Kalligas, Software Engineer
 
 <div class="row">
     <div class="col-xs-12">
+        <div class="blog-header"><h2>Knowledge</h2></div>
+    </div>
+</div>
+
+{% for knowledge in site.knowledge %}
+<div class="row">
+    <div class="col-xs-12">
+        <table class="table">
+		<tr>
+			<th>Level</th>
+			<th>{{ knowledge[0] }}</th>
+		</tr>
+		{% for section in knowledge[1] %}
+		<tr>
+			<td>{{ section[0] }}</td>
+			<td>{{ section[1] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+    </div>
+</div>
+{% endfor %}
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="blog-header"><h2>Conferences</h2></div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <table class="table">
+            {% for conference in site.participations %}
+            <tr>
+                <td><strong>{{ conference['date'] }}</strong></td>
+                <td class="text-main">
+			{{ conference['name'] }}
+			{% if conference['video'] %}
+			<a href="{{ conference['video'] }}" target="blank"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+			{% endif %}
+
+			{% if conference['slides'] %}
+			<a href="{{ conference['slides'] }}" target="blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+			{% endif %}
+		</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
         <div class="blog-header"><h2>Languages</h2></div>
     </div>
 </div>
