@@ -1,3 +1,7 @@
+body {
+  color: #494949;
+}
+
 .header-column {
     position: fixed;
     width: inherit;
