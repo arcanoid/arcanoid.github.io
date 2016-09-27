@@ -122,7 +122,7 @@ projects:
       Source code: https://github.com/arcanoid/random_facts
       Description: A Ruby gem that allows a user to request random facts with optional parameters such as max size of returned results array.
       Technologies: Ruby
-    Random facts:
+    Text analysis:
       Source code: https://github.com/arcanoid/text_analysis
-      Description: A gem that analyzes given text input into useful info
+      Description: A gem that analyzes given text input into useful info.
       Technologies: Ruby
