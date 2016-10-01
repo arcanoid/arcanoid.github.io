@@ -102,6 +102,10 @@ projects:
       Source code: https://github.com/arcanoid/logs_visualizer
       Description: A gem that converts a Rails application logs into an image graph, representing all the elements that consisted each action.
       Technologies: Ruby, Graphviz
+    Gem Dependencies visualizer:
+      Source code: https://github.com/arcanoid/gem_dependencies_visualizer
+      Description: A gem that, given the input of a Gemfile.lock's text, produces a .png image of the dependencies tree.
+      Technologies: Ruby, Graphviz
     Spec producer:
       Source code: https://github.com/arcanoid/logs_visualizer
       Description: A gem that converts a Rails application logs into an image graph, representing all the elements that consisted each action.
