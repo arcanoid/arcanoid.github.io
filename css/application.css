@@ -84,7 +84,7 @@ a:hover {
 }
 
 .small-header-column {
-    padding: 10px 20px 5px 20px;
+    padding: 10px 20px 25px 20px;
     background-color: #3b3d3f;
     color: #ffffff;
     font-size: 16px;
@@ -100,8 +100,12 @@ a:hover {
 }
 
 .small-header-column .author-image img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+}
+
+.small-header-column .footer-row .social-row i {
+    margin-right: 10px;
 }
 
 .author-image-container .author-name {
@@ -125,4 +129,26 @@ a:hover {
 
 .text-main {
     color: #e74c3c;
+}
+
+.post-header {
+    font-size: 16px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.post-body {
+    font-style: italic;
+    text-align: justify;
+}
+
+.post-date {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.author-about {
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: bold;
 }

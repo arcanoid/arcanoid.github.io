@@ -1,186 +1,25 @@
 ---
 layout: default
-title: Vasilis Kalligas, Software Engineer
+title: The tales of a Software Engineer called Vasilis Kalligas
 ---
 
-<div class="row">
+<div class="page-header">
+  <h1>A developer's tale</h1>
+</div>
+
+{%  for post in site.posts %}
+  <div class="row">
     <div class="col-xs-12">
-        <div class="blog-header"><h2>Personal info</h2></div>
-    </div>
-</div>
+      <div class="post-header">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </div>
 
-<div class="row">
-    <div class="col-xs-12">
-        <table class="table">
-              {% for info in site.personal_info %}
-                <tr>
-                  <td><strong>{{ info[0] }}</strong></td>
-                  <td class="text-main">{{ info[1] }}</td>
-                </tr>
-              {% endfor %}
-        </table>
-    </div>
-</div>
+      <div class="post-date">
+      	<span class="glyphicon glyphicon-time" aria-hidden="true"></span> 
+      	<span>{{ post.date | date: '%B %d, %Y' }}</span> 
+      </div>
 
-<div class="row">
-    <div class="col-xs-12">
-        <div class="blog-header"><h2>Professional experience (so far...)</h2></div>
+      <div class="post-body">{{ post.excerpt }}</div>
     </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">
-        <table class="table">
-              {% for experience in site.professional_experience %}
-                <tr>
-                  <td><strong>{{ experience[1]["from"] }} - {{ experience[1]["until"] }}</strong></td>
-                  <td class="text-main">{{ experience[0] }}</td>
-                </tr>
-              {% endfor %}
-        </table>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">
-        <div class="blog-header"><h2>Education</h2></div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">
-        <table class="table">
-              {% for education in site.education %}
-                <tr>
-                  <td><strong>{{ education[1]["from"] }} - {{ education[1]["until"] }}</strong></td>
-                  <td class="text-main">
-                      {{ education[0] }}
-
-                      {% if education[1]["additional_info"] %}
-                      <div>{{ education[1]["additional_info"] }}</div>
-                      {% endif %}
-                  </td>
-                </tr>
-              {% endfor %}
-        </table>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">
-        <div class="blog-header"><h2>Knowledge</h2></div>
-    </div>
-</div>
-
-{% for knowledge in site.knowledge %}
-<div class="row">
-    <div class="col-xs-12">
-        <table class="table">
-		<tr>
-			<th>Level</th>
-			<th>{{ knowledge[0] }}</th>
-		</tr>
-		{% for section in knowledge[1] %}
-		<tr>
-			<td>{{ section[0] }}</td>
-			<td class="text-main">{{ section[1] }}</td>
-		</tr>
-		{% endfor %}
-	</table>
-    </div>
-</div>
-{% endfor %}
-
-<div class="row">
-    <div class="col-xs-12">
-        <div class="blog-header"><h2>Conferences</h2></div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">
-        <table class="table">
-            {% for conference in site.participations %}
-            <tr>
-                <td><strong>{{ conference['date'] }}</strong></td>
-                <td class="text-main">
-			{{ conference['name'] }}
-			{% if conference['video'] %}
-			<a href="{{ conference['video'] }}" target="blank"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
-			{% endif %}
-
-			{% if conference['slides'] %}
-			<a href="{{ conference['slides'] }}" target="blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
-			{% endif %}
-		</td>
-            </tr>
-            {% endfor %}
-        </table>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">
-        <div class="blog-header"><h2>Languages</h2></div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">
-        <table class="table">
-              {% for language in site.languages %}
-                <tr>
-                  <td><strong>{{ language[0] }}</strong></td>
-                  <td class="text-main">{{ language[1] }}</td>
-                </tr>
-              {% endfor %}
-        </table>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">
-        <div class="blog-header"><h2>Hobbies</h2></div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">
-        <table class="table">
-              {% for hobby in site.hobbies %}
-                <tr>
-                  <td><strong><i class="{{ hobby[1] }}"></i></strong></td>
-                  <td class="text-main">{{ hobby[0] }}</td>
-                </tr>
-              {% endfor %}
-        </table>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-12">
-        <div class="blog-header"><h2>Open source projects</h2></div>
-    </div>
-</div>
-
-{% for project in site.projects['open source'] %}
-{% assign loopindex = forloop.index | modulo: 2 %}
-{% if loopindex == 1 %}
-<div class="row">
-    <div class="col-xs-12 col-sm-6 project-block end">
-        <div class="link-header"><a href="{{ project[1]['Source code'] }}">{{ project[0] }}</a></div>
-        <div><i class="fa fa-tags" aria-hidden="true"></i> {{ project[1]["Technologies"] }}</div>
-        <div>{{ project[1]["Description"] }}</div>
-    </div>
-    {% if forloop.last %}
-	</div>
-    {% endif %}
-    {% else %}
-    <div class="col-xs-12 col-sm-6 project-block end">
-        <div class="link-header"><a href="{{ project[1]['Source code'] }}">{{ project[0] }}</a></div>
-        <div><i class="fa fa-tags" aria-hidden="true"></i> {{ project[1]["Technologies"] }}</div>
-        <div>{{ project[1]["Description"] }}</div>
-    </div>
-</div>
-{% endif %}
+  </div>
 {% endfor %}

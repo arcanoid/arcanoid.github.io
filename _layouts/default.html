@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="utf-8">
-    <meta name="description" content="{{site.description}}"/>
+    <meta name="description" content="{% if page.description %} {{ page.description }} | {% endif %} {{ site.description }}"/>
     <meta name="author" content="{{site.author}}"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
@@ -15,7 +15,7 @@
     <meta property="og:url" content="{{ site.baseurl }}/index.html" />
     <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/site_photo.jpg" />
+    <meta property="og:image" content="{{ site.baseurl }}/assets/site_photo.jpg" />
 
     <meta name="theme-color" content="#3b3d3f">
 
@@ -42,12 +42,12 @@
                 <div class="author-image-container pull-left">
                     <div class="author-image">
                         <a href="{{site.baseurl}}/">
-                            <img src="assets/site_photo.jpg">
+                            <img src="{{site.baseurl}}/assets/site_photo.jpg">
                         </a>
                     </div>
                 </div>
 
-                <div class="author-name">Vasilis Kalligas</div>
+                <div class="author-name">Vasilis Kalligas | <a href="{{site.baseurl}}/about.html">About me</a></div>
 
                 <div class="footer-row">
                     <div class="social-row text-large">
@@ -67,7 +67,7 @@
                 <div class="author-image-container">
                     <div class="author-image">
                         <a href="{{site.baseurl}}/">
-                            <img src="assets/site_photo.jpg">
+                            <img src="{{site.baseurl}}/assets/site_photo.jpg">
                         </a>
                     </div>
 
@@ -75,6 +75,12 @@
                 </div>
 
                 <div class="footer-row text-center">
+                    <div class="author-about">
+                        <a href="{{site.baseurl}}/about.html">
+                            About me
+                        </a>    
+                    </div>
+
                     <div class="social-row text-large">
                         <a href="{{ site.social.github }}" target="blank"><i class="fa fa-github"></i></a>
                         <a href="{{ site.social.google_plus }}" target="blank"><i class="fa fa-google-plus"></i></a>
