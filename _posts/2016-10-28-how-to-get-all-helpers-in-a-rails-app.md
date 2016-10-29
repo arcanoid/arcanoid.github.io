@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: How to get all helpers in a Rails application
 description: How to get a list of all customs helpers and methods in a Ruby on a Rails application  
 ---

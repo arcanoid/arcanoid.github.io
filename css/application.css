@@ -1,5 +1,7 @@
 body {
   color: #494949;
+    font-size: 16px;
+    text-align: justify;
 }
 
 .header-column {
@@ -26,7 +28,7 @@ body {
 .header-column .footer-row {
     background: transparent;
     position: fixed;
-    width: 300px;
+    width: inherit;
     left: 0;
     bottom: 0;
     -moz-box-sizing: border-box;
@@ -78,9 +80,14 @@ a:hover {
 .author-image img {
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border: 1px solid #ffffff;
+}
+
+.author-links {
+    padding-top: 100px;
+    text-align: center;
 }
 
 .small-header-column {
@@ -111,7 +118,7 @@ a:hover {
 .author-image-container .author-name {
     text-align: center;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     color: #e74c3c;
     padding-top: 10px;
 }
@@ -140,6 +147,7 @@ a:hover {
 .post-body {
     font-style: italic;
     text-align: justify;
+    padding-bottom: 20px;
 }
 
 .post-date {

@@ -54,6 +54,7 @@
                         <a href="{{ site.social.github }}" target="blank"><i class="fa fa-github"></i></a>
                         <a href="{{ site.social.google_plus }}" target="blank"><i class="fa fa-google-plus"></i></a>
                         <a href="{{ site.social.linkedin }}" target="blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="{{ site.social.stack_overflow }}" target="blank"><i class="fa fa-stack-overflow"></i></a>
                         <a href="mailto:{{ site.social.email }}"><i class="fa fa-envelope"></i></a>
                     </div>
                 </div>
@@ -75,16 +76,11 @@
                 </div>
 
                 <div class="footer-row text-center">
-                    <div class="author-about">
-                        <a href="{{site.baseurl}}/about.html">
-                            About me
-                        </a>    
-                    </div>
-
                     <div class="social-row text-large">
                         <a href="{{ site.social.github }}" target="blank"><i class="fa fa-github"></i></a>
                         <a href="{{ site.social.google_plus }}" target="blank"><i class="fa fa-google-plus"></i></a>
                         <a href="{{ site.social.linkedin }}" target="blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="{{ site.social.stack_overflow }}" target="blank"><i class="fa fa-stack-overflow"></i></a>
                         <a href="mailto:{{ site.social.email }}"><i class="fa fa-envelope"></i></a>
                     </div>
                 </div>
@@ -92,6 +88,22 @@
         </div>
 
         <div class="col-xs-12 col-sm-8 col-lg-9">
+            <div class="row hidden-xs">
+                <br><br>
+                <ul class="nav nav-tabs">
+                    <li class="{% if page.url == '/' %} active {% endif %}">
+                        <a href="{{site.baseurl}}/">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="{% if page.url == '/about.html' %} active {% endif %}">
+                        <a href="{{site.baseurl}}/about.html">
+                            About me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
             {{ content }}
 
             <div class="footer visible-xs">
@@ -112,5 +124,6 @@
 
 </script>
 
+<script id="dsq-count-scr" src="//https-arcanoid-github-io.disqus.com/count.js" async></script>
 </body>
 </html>
